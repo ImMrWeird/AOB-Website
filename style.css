@@ -12,17 +12,17 @@
 {
     font-size:8px;
 }
-
+ 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
+ 
 body, html{
     height: 100%;
 }
-
+ 
 nav{
     display: flex;
     justify-content: space-around;
@@ -97,41 +97,43 @@ nav ul li ul li a{
 nav ul li ul li a:hover{
     margin-top:60px;
     transition: 0.25s;
-    color: darkgreen;
+    color: #90EE90;
 }
  
 nav ul li:hover > ul{
     transition: 0.25s linear;
     display: block;
 }
-
+ 
 .burger{
     display: none;
     cursor: pointer;
 }
-
+ 
 .burger div{
     width: 25px;
     height: 2px;
     background-color: white;
     margin: 5px;
 }
-
+ 
 nav ul li div button a{
-    transition: 0.45s linear;
     padding: 12px 24px;
-    color: white;
-    border: 2px solid white;
-    border-radius: 10px 10px 10px 10px;
-}
-
-nav ul li div button a:hover{
-    transition: 0.45s linear;
-    border: 2px solid black;
     color: black;
-    background: linear-gradient(45deg, #39FF14, green);
+    border: 1px solid white;
+    transition: 0.75s background-position ease-in-out;
+    background-size: 300%;
+    background-image: linear-gradient(60deg, black, black, #39FF14, green);
+    background-position: left;
+    transition: 0.75s;
 }
-
+ 
+nav ul li div button a:hover{
+    transition: 0.75s;
+    color: black;
+    background-position: right;
+}
+ 
 @media screen and (max-width: 1300px) {
     .nav-links{
         width: 50%;
@@ -139,14 +141,14 @@ nav ul li div button a:hover{
     nav ul li div button a{
         border: none;
     }
-
+ 
     nav ul li div button a:hover{
         color: white;
         background: none;
         border: none;
     }
 }
-
+ 
 @media screen and (max-width: 850px){
     body{
         overflow-x: hidden;
@@ -154,7 +156,7 @@ nav ul li div button a:hover{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 107vh;
+        height: 92vh;
         top: 8vh;
         background-color: black;
         display: flex;
@@ -167,21 +169,21 @@ nav ul li div button a:hover{
     .nav-links li{
         opacity: 0;
     }
-
+ 
     .burger{
         display: block;
     }
-
+ 
     nav ul li:hover > ul{
         transition: 0.25s linear;
         display: none;
     }
 }
-
+ 
 .nav-active{
     transform: translateX(0%);
 }
-
+ 
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -191,3 +193,4 @@ nav ul li div button a:hover{
         transform: translateX(0px);
     }
 }
+ 

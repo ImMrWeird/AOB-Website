@@ -1,0 +1,80 @@
+body{
+    height: 100%;
+}
+ 
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 30px;
+    margin-top: 150px;
+}
+ 
+h1{
+    margin-left: 15px;
+    font-family: 'Lato', sans-serif;
+    margin-top: -67px;
+    padding-bottom: 30px;
+    color: black;
+    font-weight: bold;
+}
+ 
+.container div .srch{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+ 
+.container div #p1,
+.container div #p2{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: -28.5px;
+    padding-bottom: 10px;
+    color: black;
+}
+ 
+.container div input{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    height: 50px;
+    width: 250px;
+}
+ 
+.container div select{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    height: 50px;
+    width: 250px;
+}
+ 
+#btn{
+    border: 1px solid black;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+    transition: 0.75s background-position ease-in-out;
+    background-size: 300%;
+    background-image: linear-gradient(45deg,#ff0000, #04d9ff, darkgreen, greenyellow);
+    background-position: left;
+    transition: 0.75s;
+    color: white;
+}
+ 
+#btn:hover{
+    transition: 0.75s;
+    color: black;
+    background-position: right;
+}
+ 
+@media screen and (max-width: 1300px){
+    
+}
+
